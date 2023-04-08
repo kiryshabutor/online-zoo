@@ -1,0 +1,266 @@
+.instructions{
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding: 70px 0px 100px;
+
+
+}
+
+
+
+@media (max-width: 999px) {
+    .instructions{
+        padding: 30px 0 20px;
+        .container{
+            max-width: 100%;   
+            padding: 0; 
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .instructions{
+        padding: 20px 0;
+        .container{
+            max-width: 100%;   
+            padding: 10px; 
+        }
+    }
+}
+
+
+.box{
+    padding: 40px 100px 60px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &__header{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+        text-align: center;
+        color: #FE9013;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #333B41;
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #333B41;
+        margin-bottom: 60px;
+        &-weight{
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        span{
+            border-bottom: 1px solid #FE9013;;
+        }
+    }
+
+    &__slogan{
+        margin: 0 auto 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+        color: #333B41;
+
+    }
+
+    &__button{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1590px) {
+    .box{
+        padding: 30px 50px 50px;
+        &__header{
+            margin-bottom: 20px;
+        }
+        &__subtitle{
+            margin-bottom: 20px;
+        }
+        &__text{
+            margin-bottom: 40px;
+            &-weight{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 999px) {
+    .box{
+        padding: 10px 20px 60px;
+        &__slogan{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .box{
+        padding: 20px 0px 40px;
+        max-width: 300px;
+        margin: 0 auto;
+        &__text{
+            display: none;
+        }
+        &__header{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    max-width: 764px;
+    margin: 0 auto;
+    &__item{
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        &-arrow{
+            padding-top: 62px;
+            align-self: flex-start;
+        }
+        &-card{
+            display: flex;
+            flex-direction: column;
+        }
+        &--wrapper{
+            width: 168px;
+            height: 168px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #F9804B;
+            margin-bottom: 30px;
+        }
+    }
+    &__cards{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    &__texts{
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        height: 44px;
+    }
+
+    &__text{
+        width: 168px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+        height: 44px;
+    }
+}
+
+@media (max-width: 999px) {
+    .plan{
+        &__item{
+            &-arrow{
+                display: none;
+            }
+            &:not(:last-child){
+                margin-right: 42px;
+            }
+        }
+        &__texts{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 639px) {
+    .plan{
+        &__cards{
+            flex-direction: column;
+        }
+        &__item{
+            &:not(:last-child){
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+            &--wrapper{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+.arrows{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    top: -16px;
+    &__item{
+        &:not(:last-child){
+            margin-right: 115px;
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .arrows{
+        display: flex;
+
+    }
+}
+
+@media (max-width: 639px) {
+    .arrows{
+        flex-direction: column;
+        height: 684px;
+        top: -10px;
+        &__item{
+            padding-left: 140px;
+            &:not(:last-child){
+                margin-bottom: 225px;
+            }
+        }
+        &__green{
+            transform: rotate(90deg);
+            
+        }
+    }
+}

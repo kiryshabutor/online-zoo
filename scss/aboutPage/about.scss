@@ -1,0 +1,320 @@
+.about{
+   position: relative;
+   padding: 140px 0 100px;
+
+   .container{
+      padding: 0 16px;
+   }
+
+   &__foto{
+      position: absolute;
+      &-1{
+         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+         width: 293px;
+         height: 605px;
+         top: 12px;
+         right: -93px;
+      }
+      &-2{
+         width: 368px;
+         height: 275px;
+         bottom: 0px;
+         right: 0px;
+      }
+      &-3{
+         width: 880px;
+         height: 460px;
+         bottom: 0px;
+         left: -588px;
+      }
+   }
+   
+
+   &__wrapper{
+      position: relative;
+      margin-bottom: 80px;
+   }
+
+   &__content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 180px;
+      &-button{
+         display: none;
+         margin-bottom: 30px;
+      }
+   }
+
+   &__button{
+      margin: 0 auto;
+   }
+
+   &__column{
+      display: flex;
+      flex-direction: column;
+      
+      max-width: 465px;
+      &-header{
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 48px;
+         line-height: 120%;
+         color: #333B41;
+         margin-bottom: 20px;
+      }
+
+      &-text{
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 130%;
+         color: #333B41;
+         &--first{
+            margin-bottom: 54px;
+         }
+      }
+
+      &-slogan{
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 120%;
+         color: #333B41;
+         margin-bottom: 34px;
+      }
+   }
+
+   &__img{
+      width: 609px;
+      height: 403px;
+      background: url(../assets/img/about/about__pctr.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+}
+
+@media (max-width: 1590px) {
+   .about{
+      padding: 100px 0 140px;
+      &__foto{
+         &-1{
+            display: none;
+         }
+         &-2{
+            width: 241px;
+            height: 180px;
+         }
+         &-3{
+            width: 386px;
+            height: 202px;
+            left: -192px;
+         }
+      }
+      &__img{
+         width: 435px;
+      }
+      &__wrapper{
+         margin-bottom: 20px;
+      }
+      .container{
+         max-width: 999px;
+         padding: 0 30px;
+      }
+      &__content{
+         margin-bottom: 150px;
+      }
+   }
+}
+
+@media (max-width: 999px) {
+   .about{
+      padding: 60px 0 100px;
+      &__foto{
+         &-1{
+            display: block;
+            width: 231px;
+            height: 476px;
+         }
+         &-2{
+            width: 175px;
+            height: 131px;
+         }
+         &-3{
+            width: 386px;
+            height: 202px;
+            left: -251px;
+         }
+      }
+      &__img{
+         display: none;
+      }
+      &__wrapper{
+         margin-bottom: 20px;
+      }
+      &__content{
+         margin-bottom: 80px;
+      }
+      &__column{
+         &-header{
+            margin-bottom: 20px;
+         }
+         &-text{
+            &--first{
+               margin-bottom: 30px;
+            }
+         }
+         &-slogan{
+            margin-bottom: 20px;
+         }
+      }
+      .container{
+         max-width: 640px; 
+      }
+   }
+}
+@media (max-width: 639px) {
+   .about{
+      padding: 20px 0 60px;
+      .container{
+         padding: 0 10px;
+      }
+      &__foto{
+         &-1{
+            top: 38px;
+            right: -74px;
+            width: 105px;
+            height: 217px;
+         }
+         &-2{
+            width: 85px;
+            height: 71px;
+         }
+         &-3{
+            width: 138px;
+            height: 72px;
+            left: -80px;
+         }
+      }
+      &__wrapper{
+         width: 293px;
+         margin: 0 auto 20px;
+      }
+      &__content{
+         margin-bottom: 40px;
+         flex-direction: column;
+         &-button{
+            display: flex;
+         }
+      }
+      &__column{
+         &-header{
+            font-size: 24px;
+            margin-bottom: 10px;
+         }
+         &-text{
+            &-text--first{
+               margin-bottom: 20px;
+            }
+         }
+         &-slogan{
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
+
+.gallery{
+   position: relative;
+   display: flex;
+   flex-wrap: nowrap;
+
+   
+}
+
+
+.card{
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+   padding: 1px;
+   border-radius: 5px;
+   max-width: 366px;
+   &:hover{
+      cursor: pointer;
+   }
+   &__picture{
+      width: 364px;
+      margin: 0 auto;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      object-fit: cover;
+   }
+
+   &__info{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      background: #fff;
+      padding: 8px 15px 10px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      &-name{
+         text-align: left;
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 140%;
+         text-transform: uppercase;
+         color: #000000;
+      }
+      &-location{
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 15px;
+         line-height: 120%;
+         color: #000000;
+      }
+   }
+
+   &__column{
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 1590px) {
+   .card{
+      width: 293px;
+      margin-bottom: 60px;
+      display: inline-flex;
+      &__picture{
+         width: 291px;
+      }
+   }
+}
+
+@media (max-width: 999px) {
+   .card{
+      &__picture{
+         width: 272px;
+      }
+   }
+}
+
+@media (max-width: 639px) {
+   .card{
+      width: 293px;
+      margin-bottom: 0px;
+      &__picture{
+         width: 291px;
+      }
+   }
+}
