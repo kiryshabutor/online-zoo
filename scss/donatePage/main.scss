@@ -168,6 +168,8 @@
     align-items: center;
 
     &__button{
+        background: #767474;
+        pointer-events: none;
         margin-bottom:30px;
     }
 
