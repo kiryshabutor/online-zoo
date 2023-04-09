@@ -1,6 +1,7 @@
 const amountInputForm = document.querySelector('.input__value')
 const amountInput = document.getElementById('amount')
 const amountButton = document.getElementById('amount-button')
+const progressBar = document.querySelector('.progress-bar__switcher')
 const radioButtons = document.getElementsByName("amount-radio-button")
 
 
@@ -29,3 +30,13 @@ function onAmountInput() {
 }
 
 amountInput.addEventListener('input', onAmountInput);
+
+progressBar.addEventListener('click', (e) =>{
+    radioButtons.forEach( el =>{
+        if( el == e.target){
+            
+            amountButton.style.background = 'linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)';
+            amountButton.style.pointerEvents = 'all';
+        }
+    })
+})
