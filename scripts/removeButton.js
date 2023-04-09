@@ -12,12 +12,12 @@ function addOpacityStyle(){
 }
 
 window.addEventListener('scroll', function() {
-  if( window.pageYOffset >= ( document.querySelector('.header').clientHeight - this.document.querySelector('.header__menu').clientHeight ) )
+  if( window.pageYOffset >= ( header.clientHeight - this.document.querySelector('.header__menu').clientHeight ) )
     returnButton.classList.add('active')
   else
     returnButton.classList.remove('active')
 });
-
+console.log(document.querySelector('.header').clientHeight)
 returnButton.addEventListener('click', function(e){
   e.preventDefault();
   var scroll = new SmoothScroll()

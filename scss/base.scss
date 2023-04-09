@@ -270,17 +270,23 @@ body{
         opacity: 1;
     }
 
-    span{
-
     
-       width: 100px;
-       height: 100px;
-       
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
  }
+
+@media (max-width: 999px) {
+    .button-back{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 639px) {
+    .button-back{
+        right: 80px;
+        bottom: 40px;
+        display: none;
+    }
+}
 
 
 
