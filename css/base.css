@@ -34,7 +34,17 @@ body {
   position: fixed;
   transition: all 0.3s;
   z-index: 121;
-  animation: showOpacity 0.3s linear forwards;
+  -webkit-animation: showOpacity 0.3s linear forwards;
+          animation: showOpacity 0.3s linear forwards;
+}
+
+@-webkit-keyframes showOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes showOpacity {
@@ -80,7 +90,8 @@ body {
   background: url(../assets/icons/header__logo.png);
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: none;
+  -o-object-fit: none;
+     object-fit: none;
 }
 .logo:hover {
   cursor: pointer;
@@ -245,7 +256,8 @@ body {
   background: url(../assets/icons/menu__logo.png);
   background-size: cover;
   background-position: center;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .menu__container {
   display: flex;
@@ -278,4 +290,4 @@ body {
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF;
-}
+}/*# sourceMappingURL=base.css.map */

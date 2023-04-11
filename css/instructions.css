@@ -25,7 +25,8 @@
 .box {
   padding: 40px 100px 60px;
   background: rgba(253, 253, 255, 0.52);
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -228,4 +229,4 @@
   .arrows__green {
     transform: rotate(90deg);
   }
-}
+}/*# sourceMappingURL=instructions.css.map */

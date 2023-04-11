@@ -30,7 +30,8 @@
   padding-top: 14px;
   padding-bottom: 14px;
   background: #000000;
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .header__menu-column--first {
   display: flex;
@@ -188,7 +189,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .header__inner {
     justify-content: space-between;
@@ -257,4 +259,4 @@
   .menu__container {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=header.css.map */

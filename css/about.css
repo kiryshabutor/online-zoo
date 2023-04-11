@@ -224,7 +224,8 @@
   margin: 0 auto;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card__info {
   display: flex;
@@ -281,4 +282,4 @@
   .card__picture {
     width: 291px;
   }
-}
+}/*# sourceMappingURL=about.css.map */

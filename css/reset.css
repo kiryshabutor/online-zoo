@@ -9,8 +9,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -94,6 +92,14 @@ a {
   color: inherit;
 }
 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 input:focus::placeholder {
   color: transparent;
 }
@@ -114,4 +120,4 @@ input:focus::-moz-placeholder {
 /* FF 19+ */
 input:focus:-ms-input-placeholder {
   color: transparent;
-}
+}/*# sourceMappingURL=reset.css.map */

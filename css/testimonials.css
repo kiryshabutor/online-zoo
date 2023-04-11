@@ -162,7 +162,8 @@
   height: 391px;
   margin-top: 0px;
   border-radius: 20px;
-  animation: showComment 0.3s linear forwards;
+  -webkit-animation: showComment 0.3s linear forwards;
+          animation: showComment 0.3s linear forwards;
 }
 .comment.comment-active .comment__text {
   max-height: 309px;
@@ -222,7 +223,8 @@
 .comment__avatar {
   width: 37px;
   height: 37px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 10px;
   border-radius: 50%;
   overflow: hidden;
@@ -274,6 +276,14 @@
     display: none !important;
   }
 }
+@-webkit-keyframes showComment {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes showComment {
   0% {
     opacity: 0;
@@ -301,4 +311,4 @@
     min-width: 300px;
     height: 109px;
   }
-}
+}/*# sourceMappingURL=testimonials.css.map */

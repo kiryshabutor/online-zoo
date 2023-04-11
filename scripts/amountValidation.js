@@ -12,19 +12,16 @@ function onAmountInput() {
     if( amountInput.value.length == 0 ){
         amountInputForm.classList.remove('input__value--incorrect')
         amountInputForm.classList.remove('input__value--correct')
-        amountButton.style.background = '#767474';
-        amountButton.style.pointerEvents = 'none';
+        amountButton.classList.remove('active')
     }
     else if ( !isNaN( Number(amountInput.value) ) ) {
         amountInputForm.classList.remove('input__value--incorrect')
         amountInputForm.classList.add('input__value--correct')
-        amountButton.style.background = 'linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)';
-        amountButton.style.pointerEvents = 'all';
+        amountButton.classList.add('active')
     } else {
         amountInputForm.classList.remove('input__value--correct')
         amountInputForm.classList.add('input__value--incorrect')
-        amountButton.style.background = '#767474';
-        amountButton.style.pointerEvents = 'none';
+        amountButton.classList.remove('active')
     }
 
 }
@@ -35,8 +32,19 @@ progressBar.addEventListener('click', (e) =>{
     radioButtons.forEach( el =>{
         if( el == e.target){
             
-            amountButton.style.background = 'linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)';
-            amountButton.style.pointerEvents = 'all';
+            amountButton.classList.add('active')
         }
     })
+})
+
+amountButton.addEventListener('click', ()=>{
+    if( amountButton.classList.contains('active')){
+        amountButton.classList.remove('active');
+        amountInputForm.classList.remove('input__value--incorrect')
+        amountInputForm.classList.remove('input__value--correct')
+        amountInput.value = '';
+        radioButtons.forEach( el =>{
+            el.checked = false;    
+        });
+    }
 })
